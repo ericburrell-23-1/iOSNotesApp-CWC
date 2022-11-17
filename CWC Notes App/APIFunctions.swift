@@ -8,6 +8,8 @@
 import Foundation
 import Alamofire
 
+let networkIP = "10.0.0.111"
+
 struct Note: Decodable, Hashable {
     var _id: String
     var title: String
@@ -24,7 +26,7 @@ class APIFunctions {
     static let functions = APIFunctions()
     
     func fetchNotes() {
-        AF.request("http://10.0.0.111:8081/fetch")
+        AF.request("http://\(networkIP):8081/fetch")
             .response { response in
                 let data = String(data: response.data ?? Data([]), encoding: .utf8)
                 print("Data is " + data!)
