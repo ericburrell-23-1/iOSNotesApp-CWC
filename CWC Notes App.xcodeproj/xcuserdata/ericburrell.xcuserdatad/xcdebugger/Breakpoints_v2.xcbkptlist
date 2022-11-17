@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "65B3884B-2782-4605-915E-69F3149173D4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2747B02-60B9-4C80-8550-A5FB5986FBA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CWC Notes App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E2747B02-60B9-4C80-8550-A5FB5986FBA4 - 31cb4b6eb14f48f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in CWC_Notes_App.ContentView.body.getter : some"
+                  moduleName = "CWC Notes App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericburrell/Desktop/Programming/Exercises/CodeWithChris%20Files/Notes%20App/CWC%20Notes%20App/CWC%20Notes%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "309">
+               </Location>
+               <Location
+                  uuid = "E2747B02-60B9-4C80-8550-A5FB5986FBA4 - 4b6d7f7ddfb59863"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;CWC_Notes_App.Note&gt;, CWC_Notes_App.Note, SwiftUI.NavigationLink&lt;SwiftUI.Text, CWC_Notes_App.NoteView&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in CWC_Notes_App.ContentView.body.getter : some"
+                  moduleName = "CWC Notes App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericburrell/Desktop/Programming/Exercises/CodeWithChris%20Files/Notes%20App/CWC%20Notes%20App/CWC%20Notes%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "170">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "848598D5-9DED-4715-8ECE-AA3675C69BA1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CWC Notes App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "848598D5-9DED-4715-8ECE-AA3675C69BA1 - 4b6d7f7ddfb59863"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;CWC_Notes_App.Note&gt;, CWC_Notes_App.Note, SwiftUI.NavigationLink&lt;SwiftUI.Text, CWC_Notes_App.NoteView&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in CWC_Notes_App.ContentView.body.getter : some"
+                  moduleName = "CWC Notes App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericburrell/Desktop/Programming/Exercises/CodeWithChris%20Files/Notes%20App/CWC%20Notes%20App/CWC%20Notes%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "170">
+               </Location>
+               <Location
+                  uuid = "848598D5-9DED-4715-8ECE-AA3675C69BA1 - fea55455bd07ef75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CWC_Notes_App.Note) -&gt; SwiftUI.NavigationLink&lt;SwiftUI.Text, CWC_Notes_App.NoteView&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;CWC_Notes_App.Note&gt;, CWC_Notes_App.Note, SwiftUI.NavigationLink&lt;SwiftUI.Text, CWC_Notes_App.NoteView&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in CWC_Notes_App.ContentView.body.getter : some"
+                  moduleName = "CWC Notes App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericburrell/Desktop/Programming/Exercises/CodeWithChris%20Files/Notes%20App/CWC%20Notes%20App/CWC%20Notes%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "190">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB783355-BB01-417B-9117-3C06A3220A18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CWC Notes App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "AB783355-BB01-417B-9117-3C06A3220A18 - f6e2e445a383f72d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CWC_Notes_App.ContentView.body.getter : some"
+                  moduleName = "CWC Notes App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericburrell/Desktop/Programming/Exercises/CodeWithChris%20Files/Notes%20App/CWC%20Notes%20App/CWC%20Notes%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "607">
+               </Location>
+               <Location
+                  uuid = "AB783355-BB01-417B-9117-3C06A3220A18 - caf59428711d049b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in CWC_Notes_App.ContentView.body.getter : some"
+                  moduleName = "CWC Notes App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericburrell/Desktop/Programming/Exercises/CodeWithChris%20Files/Notes%20App/CWC%20Notes%20App/CWC%20Notes%20App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
