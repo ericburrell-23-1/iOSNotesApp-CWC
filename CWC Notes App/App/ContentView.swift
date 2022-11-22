@@ -15,7 +15,10 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach($notesArray, id: \.self) { $note in
-                    NavigationLink(destination: NoteView(note: $note)) {
+                    NavigationLink(
+                        destination: NoteView(note: note)
+                            .padding()
+                    ) {
                         Text(note.title)
                     }
                 }
@@ -27,6 +30,7 @@ struct ContentView: View {
             .toolbar {
                 NavigationLink(destination: {
                     NewNoteView()
+                        .padding()
                 }) {
                     HStack(spacing: 5) {
                         Image(systemName: "plus")
@@ -49,7 +53,7 @@ extension ContentView: DataDelegate {
     mutating func updateArray(with newArray: String) {
         do {
             notesArray = try JSONDecoder().decode([Note].self, from: newArray.data(using: .utf8)!)
-            print("notesArray is \(notesArray)")
+            // print("notesArray is \(notesArray)")
         } catch {
             print("Failed to decode!")
         }

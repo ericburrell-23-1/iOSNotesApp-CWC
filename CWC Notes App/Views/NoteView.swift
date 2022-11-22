@@ -9,7 +9,8 @@ import SwiftUI
 
 struct NoteView: View {
     // MARK: - PROPERTIES
-    @Binding var note: Note
+    @Environment(\.dismiss) private var dismissNoteView
+    var note: Note  // Used to initialize var "sessionNote"
     @State var sessionNote: Note = Note(_id: "", title: "", note: "", date: "")
     
     // MARK: - BODY
@@ -18,7 +19,6 @@ struct NoteView: View {
             TextField("Note Title", text: $sessionNote.title)
                 .textFieldStyle(.roundedBorder)
                 .padding(.horizontal, 10)
-                .padding(.top, 5)
             if #available(iOS 16.0, *) {
                 TextField("New note...", text: $sessionNote.note, axis: .vertical)
                     .lineLimit(5...10)
@@ -26,7 +26,7 @@ struct NoteView: View {
                     .padding(.horizontal, 10)
                     .padding(.top, 15)
             } else {
-                Text("New note:")
+                Text("Note text:")
                     .font(.footnote)
                     .foregroundColor(.accentColor)
                     .padding(.leading, 5)
@@ -38,18 +38,30 @@ struct NoteView: View {
         .onAppear() {
             sessionNote = note
         }
-        .navigationTitle("Add Note")
+        .navigationTitle(sessionNote.title)
         .toolbar {
             HStack {
                 Button {
-                    print("Note deleted!")
+                    //print("Note deleted!")
+                    APIFunctions.functions.deleteNote(id: sessionNote._id)
+                    APIFunctions.functions.fetchNotes() {
+                        dismissNoteView()
+                    }
                 } label: {
-                    Text("Delete")
+                    HStack(spacing: 5) {
+                        Image(systemName: "trash")
                         .foregroundColor(.red)
+                        Text("Delete")
+                            .foregroundColor(.red)
+                    }
                 }
                 Button {
-                    print("Note saved!")
-                    note = sessionNote
+                    //print(sessionNote.note)
+                    sessionNote.date = currentDate()
+                    APIFunctions.functions.updateNote(date: sessionNote.date, title: sessionNote.title, note: sessionNote.note, id: sessionNote._id)
+                    APIFunctions.functions.fetchNotes() {
+                        dismissNoteView()
+                    }
                 } label: {
                     Text("Save")
                         .foregroundColor(.accentColor)
@@ -61,11 +73,14 @@ struct NoteView: View {
 
     // MARK: - PREVIEW
 struct NoteView_Previews: PreviewProvider {
-    @State static var note = Note(_id: "1", title: "Preview Note", note: "This is a sample note for the previewer", date: "11/27/1996")
+    static var note = Note(_id: "1", title: "Preview Note", note: "This is a sample note for the previewer", date: "11/27/1996")
     
     static var previews: some View {
-        NoteView(note: $note)
-            //.previewLayout(.sizeThatFits)
-            .padding()
+        
+        NavigationView {
+            NoteView(note: note)
+                //.previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
 }

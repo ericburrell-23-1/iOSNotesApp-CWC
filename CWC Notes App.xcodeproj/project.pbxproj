@@ -15,6 +15,7 @@
 		BAC7CA1E2922F3F2002276F8 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7CA1D2922F3F2002276F8 /* NewNoteView.swift */; };
 		BAE09E86292427D6002B4514 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BAE09E85292427D6002B4514 /* Alamofire */; };
 		BAE09E8829242BEA002B4514 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE09E8729242BEA002B4514 /* APIFunctions.swift */; };
+		BAE09E8C2926F135002B4514 /* DateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE09E8B2926F135002B4514 /* DateFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BAC7CA1B2922E82B002276F8 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		BAC7CA1D2922F3F2002276F8 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
 		BAE09E8729242BEA002B4514 /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFunctions.swift; sourceTree = "<group>"; };
+		BAE09E8B2926F135002B4514 /* DateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,11 @@
 		BA717DC92922DF1F003B887B /* CWC Notes App */ = {
 			isa = PBXGroup;
 			children = (
+				BAE09E8A2926E0B9002B4514 /* Functions */,
 				BAC7CA1A2922E11A002276F8 /* Views */,
-				BA717DCA2922DF1F003B887B /* CWC_Notes_AppApp.swift */,
-				BA717DCC2922DF1F003B887B /* ContentView.swift */,
+				BAE09E892926E08F002B4514 /* App */,
 				BA717DCE2922DF22003B887B /* Assets.xcassets */,
 				BA717DD02922DF22003B887B /* Preview Content */,
-				BAE09E8729242BEA002B4514 /* APIFunctions.swift */,
 			);
 			path = "CWC Notes App";
 			sourceTree = "<group>";
@@ -84,6 +85,24 @@
 				BAC7CA1D2922F3F2002276F8 /* NewNoteView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BAE09E892926E08F002B4514 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA717DCA2922DF1F003B887B /* CWC_Notes_AppApp.swift */,
+				BA717DCC2922DF1F003B887B /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BAE09E8A2926E0B9002B4514 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				BAE09E8729242BEA002B4514 /* APIFunctions.swift */,
+				BAE09E8B2926F135002B4514 /* DateFunctions.swift */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA717DCD2922DF1F003B887B /* ContentView.swift in Sources */,
+				BAE09E8C2926F135002B4514 /* DateFunctions.swift in Sources */,
 				BA717DCB2922DF1F003B887B /* CWC_Notes_AppApp.swift in Sources */,
 				BAC7CA1C2922E82B002276F8 /* NoteView.swift in Sources */,
 				BAC7CA1E2922F3F2002276F8 /* NewNoteView.swift in Sources */,
