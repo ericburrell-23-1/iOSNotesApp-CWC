@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 let networkIP = "10.0.0.111"
+let customAllowedSet =  NSCharacterSet(charactersIn:"\"”“„’‘…–—•₩€₽%<>\\^`{|}\n").inverted
 
 struct Note: Decodable, Hashable {
     var _id: String
@@ -36,10 +37,12 @@ class APIFunctions {
     }
     
     func addNote(date: String, title: String, note: String) {
+        let escapedNote = note.addingPercentEncoding(withAllowedCharacters: customAllowedSet)
+        let escapedTitle = title.addingPercentEncoding(withAllowedCharacters: customAllowedSet)
         let headers: HTTPHeaders = [
-            "title" : title,
+            "title" : escapedTitle!,
             "date" : date,
-            "note" : note
+            "note" : escapedNote!
         ]
         AF.request("http://\(networkIP):8081/create", method: .post, encoding: URLEncoding.httpBody, headers: headers)
             .resume()
@@ -49,10 +52,12 @@ class APIFunctions {
 //        for scalar in note.unicodeScalars {
 //            print("\(scalar.value) ", terminator: "")
 //        } //DEBUGGING
+        let escapedNote = note.addingPercentEncoding(withAllowedCharacters: customAllowedSet)
+        let escapedTitle = title.addingPercentEncoding(withAllowedCharacters: customAllowedSet)
         let headers: HTTPHeaders = [
-            "title" : title,
+            "title" : escapedTitle!,
             "date" : date,
-            "note" : note,
+            "note" : escapedNote!,
             "id" : id
         ]
         // print(headers)
